@@ -102,7 +102,7 @@ const checkGameStatus = ()=>{
 const handleReset = (e) =>{
   xIsNext=true;
   winner = null;
-  gameIsLive = false;
+  gameIsLive = true;
   statusDiv.innerHTML =xSimbol+ "is next";
   for(const cellDiv of cellDivs){
     cellDiv.classList.remove('x');
