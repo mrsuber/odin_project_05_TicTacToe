@@ -115,7 +115,8 @@ const handleCellClick = (e) =>{
   const classList = e.target.classList;
 
   // console.log("location",location);/* this gives you the location,"top-left or top-middle etc"*/
-  if(classList[1]==='x'|| classList[1]==='o' /*this is to make sure not to add x and o in one class */){
+
+  if(!gameIsLive||classList[1]==='x'|| classList[1]==='o' /*this is to make sure not to add x and o in one class */){
     return;
   }
   if(xIsNext/*is same statement as xIsNext===true*/){
